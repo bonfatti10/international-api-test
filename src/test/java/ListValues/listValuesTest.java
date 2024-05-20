@@ -49,6 +49,7 @@ public class listValuesTest {
         }
 
         System.out.println(markdown.toString());
+
         try (FileWriter fileWriter = new FileWriter("posts_log.md")) {
             fileWriter.write(markdown.toString());
         } catch (IOException e) {
